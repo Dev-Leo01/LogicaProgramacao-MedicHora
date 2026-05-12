@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/remedio-logo.png">
+    <link rel="apple-touch-icon" href="img/remedio-logo.png">
+    <link rel="apple-touch-icon-precomposed" href="img/remedio-logo.png">
+    <title>Calculadora de Dosagem Diária | MedicHora</title>
+</head>
+<body>
+    <main>
+        <form action="" id="form">
+            <section id="dados-pessoais">
+                <div class="cabecalho">
+                    <div class="container">
+                        <img src="img/remedio-logo.png" alt="">
+                        <h2> Calculadora de Dosagem Diária</h2> <br>
+                        <h5>Preencha as informações abaixo para calcular sua dosagem</h5>
+                    </div>
+                </div>
+
+                <div class="campo1">
+                    <div>
+                        <label for="nome">Nome Completo</label>
+                        <input id="nome" type="text" placeholder="Digite seu nome completo" name="nome" value="" required>
+                    </div>
+
+                    <div>
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" placeholder="Entre com o seu email" name="email" required>
+                    </div>
+                    <div>
+                        <label for="data">Data</label>
+                        <input id="data" type="datetime-local" placeholder="Digite a Data atual" name="data">
+                    </div>
+                </div>
+            </section>
+
+            <section id="dados-medicamento">
+                <div class="cabecalho">
+                    <div class="container">
+                        <img src="img/medicacao.png" alt="">
+                        <h3>Medicamento</h3>
+                    </div>
+                </div>
+
+                <div class="campo2">
+                    <div>
+                        <label for="medicamento">Medicamento</label>
+                        <input id="medicamento" type="text" name="medicamento"  placeholder="Digite o nome do medicamento">
+                    </div>
+
+                    <div>
+                        <center><h4>Ou</h4></center>
+                    </div>
+
+                    <div>
+                        <center><label for="medicamentopadrao">Medicamento Padrão</label></center>   
+                        <input id="medicamentopadrao" type="checkbox" name="medicamentopadrao">
+                    </div>
+                </div>
+            </section>
+
+            <section id="dados-dosagem">
+                <div class="cabecalho">
+                    <div class="container">
+                        <img src="img/icons8-dose-100.png" alt="">
+                        <h3>Dosagem</h3>
+                    </div>
+                </div>
+
+
+
+                <div class="campo3">
+                    <div>
+                        <label>Selecione a dosagem (mg)</label> <br>
+                        <br>
+                        <input type="radio" id="qtd-dosagem" name="dosagem" value="250">
+                        <label>250 mg</label>
+
+                        <input type="radio" id="qtd-dosagem" name="dosagem" value="500">
+                        <label>500 mg</label>
+
+                        <input type="radio" id="qtd-dosagem" name="dosagem" value="750">
+                        <label>750 mg</label>
+                    </div>
+                    
+                    <div>
+                        <label>Quantidade de doses por dia</label> <br>
+                        <br> 
+                        <input id="dosesdia" type="number"  placeholder="Doses por dia" name="doses" required>
+                    </div>
+                </div>
+            </section>
+
+            <section id="dados-resultado">
+                <div>
+                    <button id="resultado" type="submit" class="btn_enviar"><a href=""></a> Calcular dosagem diária</button>
+                </div>
+            </section>
+        </form>
+    </main>
+
+    <script src="js/app.js"></script>
+    <script src="js/logic.js"></script>
+</body>
+</html>
